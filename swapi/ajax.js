@@ -1,7 +1,7 @@
    var modals = document.querySelectorAll('.card_modal');
    var modalsPerPage = 10;
    var currentPage = 0;
-
+   
 async function swapi(page, index) {
     fetch(`https://swapi.dev/api/people/?page=${page}`)
         .then(response => response.json())
