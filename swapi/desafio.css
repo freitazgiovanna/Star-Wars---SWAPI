@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+
+body {
+  /*CSS DA PAGINA INTEIRA*/
+  margin: 0;
+  padding: 0;
+  font-family: 'Hammersmith One', sans-serif;
+  background-color: black;
+}
+
+.header {
+  width: 100%;
+  height: 12vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: black;
+}
+
+.header .logo {
+  width: 20vw;
+  position: relative;
+  bottom: 7vw;
+  left: 5vw;
+}
+
+.header .icon-header {
+  width: 5vw;
+  height: 10vh;
+  position: relative;
+  top: 0.5vw;
+  left: 1vw;
+}
+
+.header .icon-header:hover {
+  transform: scale(1.02);
+  transition: 0.9s ease-in;
+}
+
+.navbar {
+  display: flex;
+  position: relative;
+  right: 1vw;
+  list-style-type: none;
+  background-color: black;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  transition: color 2s ease;
+  background-color: gold;
+  border-radius: 1rem;
+  color: black;
+  font-weight: bolder;
+  padding: 5px 10px 5px 5px;
+}
+
+.navbar button {
+  background-color: gold;
+  border-radius: 1rem;
+}
+
+
+.navbar li a img {
+  width: 2vw;
+  position: relative;
+  top: 1.5vh;
+}
+
+.navbar li:hover {
+  transform: scale(1.02);
+  transition: 0.9s ease-in;
+}
+
+.navbar li a img:hover {
+  transform: scale(1.02);
+  transition: 0.9s ease-in-out;
+}
+
+.line {
+  display: none;
+  border-bottom: 0.5vh solid white;
+  position: relative;
+  left: 4.5vh;
+  bottom: 1.5vw;
+}
+
+.banner .container img {
+  width: 100%;
+  height: 50%;
+  opacity: 0.3;
+}
+
+.title {
+  font-size: 20px;
+  position: relative;
+  bottom: 50vw;
+}
+
+.title p {
+  color: white;
+  font-weight: bolder;
+}
+
+.title span {
+  font-size: larger;
+  font-weight: bolder;
+  color: gold;
+}
+
+.menu {
+  text-align: center;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  backdrop-filter: blur(3px)
+}
+
+.modal_content {
+  width: 40vw;
+  height: 63vh;
+  position: relative;
+  top: 20%;
+  left: 28%;
+  background-color: rgb(42, 41, 38);
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.719);
+}
+
+.modal_content h3 {
+  color: gold;
+  padding: 0% 0% 0% 5%;
+}
+
+.modal_text {
+  font-size: 15px;
+  padding: 0% 0% 0% 5%;
+  color: white;
+  text-align: left;
+  position: relative;
+  column-count: 2;
+}
+
+
+.card {
+  display: flex;
+  gap: 3rem;
+  width: 100%;
+  justify-content: center;
+  font-weight: 100;
+}
+
+.card img {
+  width: 15vw;
+  border-radius: 10%;
+}
+
+.card_modal:hover {
+  transform: scale(1.03);
+  transition: 0.9s ease-in-out;
+}
+
+.card h1 {
+  color: white;
+  text-align: center;
+  border-bottom: 0.2vh solid white;
+  position: relative;
+  bottom: 2vh;
+  font-size: medium;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: gold;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: goldenrod;
+}
+
+#pagination {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  position: relative;
+  right: 5vw;
+}
+
+#pagination button {
+  background-color: gold;
+  font-family: 'Hammersmith One', sans-serif;
+  font-weight: bolder;
+  border-radius: 15px;
+  padding: 7px 7px 7px 7px;
+}
+
+#pagination button:hover {
+  transform: scale(1.01);
+  transition: 0.9s ease-in-out;
+}
+
+
+@media only screen and (max-device-width: 430px) {
+
+  .header .icon-header {
+    width: 12vw;
+    height: 6vh;
+    position: relative;
+    top: 1vh;
+  }
+
+  .header .logo {
+    width: 45vw;
+    bottom: 6vh;
+    left: 4vw;
+  }
+
+  .navbar a {
+    display: flex;
+    width: 10vw;
+    height: 4.5vh;
+    position: relative;
+    bottom: 0.5vh;
+    right: 2vw;
+  }
+
+  .navbar li a img {
+    width: 29vw;
+    height: 5vh;
+    right: 0.5vw;
+    top: 0vw;
+  }
+
+  .navbar a span {
+    display: none;
+  }
+
+  .title {
+    font-size: 12px;
+    bottom: 65vw;
+  }
+
+  .menu {
+    width: 70%;
+    position: relative;
+    left: 7.5vh;
+  }
+
+  .card {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .card img {
+    width: 50vw;
+    align-items: center;
+  }
+
+  .card h1 {
+    bottom: 1vh;
+    border-bottom: none;
+  }
+
+  .card_modal {
+    text-align: center;
+  }
+
+  .modal_content {
+    width: 70vw;
+    height: 60vh;
+    position: relative;
+    top: 25%;
+    left: 12%;
+  }
+
+  .modal_text {
+    column-count: 1;
+  }
+
+  #pagination{
+    justify-content: center;
+    position: relative;
+    left: 0.5vw;
+  }
+}

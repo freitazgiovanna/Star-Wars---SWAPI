@@ -1,0 +1,1263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Wars</title>
+    <link rel="stylesheet" href="desafio.css">
+    <link rel="shortcut icon" type="imagex/png" href="imgs/icon.ico">
+</head>
+
+<body>
+    <div class="header">
+        <img class="icon-header" src="imgs/icon-header.png" alt="">
+        <a href="desafio.html"><img class="logo" src="imgs/icon-star-wars.png" alt=""></a>
+        <ul class="navbar">
+            <li>
+                <a href="#personagens-section" id="personagens">&nbsp<img src="imgs/vader-icon.png" alt="">&nbsp
+                    &nbsp<span>PERSONAGENS</span></a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="banner">
+        <div class="container">
+            <img src="imgs/fundo-star-wars.png" alt="" />
+        </div>
+    </div>
+    <div class="menu">
+        <div class="title">
+            <p>Bem-vindo(a) ao mundo <span>STAR WARS!</span> Conheça os personagens!</p>
+        </div>
+    </div>
+
+    <div id="personagens-section">
+        <div id="pagination">
+            <button id="previousButton">Anterior</button>
+            <button id="nextButton">Próximo</button>
+        </div>
+        <br>
+        <div class="card">
+            <div class="card_modal">
+                <a href="#" id="modal1" onclick="showDetails(1, 0)">
+                    <img src="imgs/1.jpg" />
+                </a>
+                <h1>Luke Skywalker</h1>
+            </div>
+            <div id="my_modal1" class="modal">
+                <div class="modal_content">
+                    <h3 id="title1"></h3>
+                    <div class="modal_text">
+                        <div id="details1">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card_modal">
+                <a href="#" id="modal2" onclick="showDetails(1, 1)">
+                    <img src="imgs/2.jpg" />
+                </a>
+                <h1><b>C-3PO</b></h1>
+            </div>
+            <div id="my_modal2" class="modal">
+                <div class="modal_content">
+                    <h3 id="title2"></h3>
+                    <div class="modal_text">
+                        <div id="details2"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card_modal">
+                <a href="#" id="modal3" onclick="showDetails(1, 2)">
+                    <img src="imgs/3.jpg" />
+                </a>
+                <h1><b>R2-D2</b></h1>
+            </div>
+            <div id="my_modal3" class="modal">
+                <div class="modal_content">
+                    <h3 id="title3"></h3>
+                    <div class="modal_text">
+                        <div id="details3"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card_modal">
+                <a href="#" id="modal4" onclick="showDetails(1, 3)">
+                    <img src="imgs/4.jpg" />
+                </a>
+                <h1><b>Darth Vader</b></h1>
+            </div>
+            <div id="my_modal4" class="modal">
+                <div class="modal_content">
+                    <h3 id="title4"></h3>
+                    <div class="modal_text">
+                        <div id="details4"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card_modal">
+                <a href="#" id="modal5" onclick="showDetails(1, 4)">
+                    <img src="imgs/5.jpg" />
+                </a>
+                <h1><b>Leia Organa</b></h1>
+            </div>
+            <div id="my_modal5" class="modal">
+                <div class="modal_content">
+                    <h3 id="title5"></h3>
+                    <div class="modal_text">
+                        <div id="details5"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card_modal">
+                <a href="#" id="modal6" onclick="showDetails(1, 5)">
+                    <img src="imgs/6.jpg" />
+                </a>
+                <h1>Owen Lars</h1>
+            </div>
+            <div id="my_modal6" class="modal">
+                <div class="modal_content">
+                    <h3 id="title6"></h3>
+                    <div class="modal_text">
+                        <div id="details6"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card_modal">
+                <a href="#" id="modal7" onclick="showDetails(1, 6)">
+                    <img src="imgs/7.jpg" />
+                </a>
+                <h1><b>Beru Whitesun</b></h1>
+            </div>
+            <div id="my_modal7" class="modal">
+                <div class="modal_content">
+                    <h3 id="title7"></h3>
+                    <div class="modal_text">
+                        <div id="details7"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card_modal">
+                <a href="#" id="modal8" onclick="showDetails(1, 7)">
+                    <img src="imgs/8.jpg" />
+                </a>
+                <h1><b>R5-D4</b></h1>
+            </div>
+            <div id="my_modal8" class="modal">
+                <div class="modal_content">
+                    <h3 id="title8"></h3>
+                    <div class="modal_text">
+                        <div id="details8"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card_modal">
+                <a href="#" id="modal9" onclick="showDetails(1, 8)">
+                    <img src="imgs/9.jpg" />
+                </a>
+                <h1><b>Biggs</b></h1>
+            </div>
+            <div id="my_modal9" class="modal">
+                <div class="modal_content">
+                    <h3 id="title9"></h3>
+                    <div class="modal_text">
+                        <div id="details9"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card_modal">
+                <a href="#" id="modal10" onclick="showDetails(1, 9)">
+                    <img src="imgs/10.jpg" />
+                </a>
+                <h1><b>Obi-Wan Kenobi</b></h1>
+            </div>
+            <div id="my_modal10" class="modal">
+                <div class="modal_content">
+                    <h3 id="title10"></h3>
+                    <div class="modal_text">
+                        <div id="details10"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card_modal">
+                <a href="#" id="modal11" onclick="showDetails(2, 0)">
+                    <img src="imgs/11.jpg" />
+                </a>
+                <h1>Anakin Skywalker</h1>
+            </div>
+            <div id="my_modal11" class="modal">
+                <div class="modal_content">
+                    <h3 id="title1"></h3>
+                    <div class="modal_text">
+                        <div id="details1">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card_modal">
+                <a href="#" id="modal12" onclick="showDetails(2, 1)">
+                    <img src="imgs/12.jpg" />
+                </a>
+                <h1><b>Wilhuff Tarkin</b></h1>
+            </div>
+            <div id="my_modal12" class="modal">
+                <div class="modal_content">
+                    <h3 id="title2"></h3>
+                    <div class="modal_text">
+                        <div id="details2"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card_modal">
+                <a href="#" id="modal13" onclick="showDetails(2, 2)">
+                    <img src="imgs/13.jpg" />
+                </a>
+                <h1><b>Chewbacca</b></h1>
+            </div>
+            <div id="my_modal13" class="modal">
+                <div class="modal_content">
+                    <h3 id="title3"></h3>
+                    <div class="modal_text">
+                        <div id="details3"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card_modal">
+                <a href="#" id="modal14" onclick="showDetails(2, 3)">
+                    <img id="han" src="imgs/14.jpg" />
+                </a>
+                <h1><b>Han Solo</b></h1>
+            </div>
+            <div id="my_modal14" class="modal">
+                <div class="modal_content">
+                    <h3 id="title4"></h3>
+                    <div class="modal_text">
+                        <div id="details4"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card_modal">
+                <a href="#" id="modal15" onclick="showDetails(2, 4)">
+                    <img src="imgs/15.jpg" />
+                </a>
+                <h1><b>Greedo</b></h1>
+            </div>
+            <div id="my_modal15" class="modal">
+                <div class="modal_content">
+                    <h3 id="title5"></h3>
+                    <div class="modal_text">
+                        <div id="details5"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card_modal">
+                <a href="#" id="modal16" onclick="showDetails(2, 5)">
+                    <img src="imgs/16.jpg" />
+                </a>
+                <h1>Jabba</h1>
+            </div>
+            <div id="my_modal16" class="modal">
+                <div class="modal_content">
+                    <div id="title6"></div>
+                    <div class="modal_text">
+                        <div id="details6"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card_modal">
+                <a href="#" id="modal17" onclick="showDetails(2, 6)">
+                    <img src="imgs/17.jpg" />
+                </a>
+                <h1>Wedge Antilles</h1>
+            </div>
+            <div id="my_modal17" class="modal">
+                <div class="modal_content">
+                    <div id="title7"></div>
+                    <div class="modal_text">
+                        <div id="details7"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card_modal">
+                <a href="#" id="modal18" onclick="showDetails(2, 7)">
+                    <img src="imgs/18.jpg" />
+                </a>
+                <h1>Jek Tono Porkins</h1>
+            </div>
+            <div id="my_modal18" class="modal">
+                <div class="modal_content">
+                    <div id="title8"></div>
+                    <div class="modal_text">
+                        <div id="details8"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card_modal">
+                <a href="#" id="modal19" onclick="showDetails(2, 8)">
+                    <img src="imgs/19.jpg" />
+                </a>
+                <h1>Yoda</h1>
+            </div>
+            <div id="my_modal19" class="modal">
+                <div class="modal_content">
+                    <div id="title9"></div>
+                    <div class="modal_text">
+                        <div id="details9"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card_modal">
+                <a href="#" id="modal20" onclick="showDetails(2, 9)">
+                    <img src="imgs/20.jpg" />
+                </a>
+                <h1>Palpatine</h1>
+            </div>
+            <div id="my_modal20" class="modal">
+                <div class="modal_content">
+                    <div id="title10"></div>
+                    <div class="modal_text">
+                        <div id="details10"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card_modal">
+                <a href="#" id="modal21" onclick="showDetails(3, 0)">
+                    <img src="imgs/21.jpg" />
+                </a>
+                <h1>Boba Fett</h1>
+            </div>
+            <div id="my_modal21" class="modal">
+                <div class="modal_content">
+                    <h3 id="title1"></h3>
+                    <div class="modal_text">
+                        <div id="details1"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card_modal">
+                <a href="#" id="modal22" onclick="showDetails(3, 1)">
+                    <img src="imgs/22.jpg" />
+                </a>
+                <h1>IG-88</h1>
+            </div>
+            <div id="my_modal22" class="modal">
+                <div class="modal_content">
+                    <div id="title2"></div>
+                    <div class="modal_text">
+                        <div id="details2"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card_modal">
+                <a href="#" id="modal23" onclick="showDetails(3, 2)">
+                    <img src="imgs/23.jpg" />
+                </a>
+                <h1>Bossk</h1>
+            </div>
+            <div id="my_modal23" class="modal">
+                <div class="modal_content">
+                    <div id="title3"></div>
+                    <div class="modal_text">
+                        <div id="details3"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card_modal">
+                <a href="#" id="modal24" onclick="showDetails(3, 3)">
+                    <img src="imgs/24.jpg" />
+                </a>
+                <h1>Lando Calrissian</h1>
+            </div>
+            <div id="my_modal24" class="modal">
+                <div class="modal_content">
+                    <div id="title4"></div>
+                    <div class="modal_text">
+                        <div id="details4"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card_modal">
+                <a href="#" id="modal25" onclick="showDetails(3, 4)">
+                    <img src="imgs/25.jpg" />
+                </a>
+                <h1>Lobot</h1>
+            </div>
+            <div id="my_modal25" class="modal">
+                <div class="modal_content">
+                    <div id="title5"></div>
+                    <div class="modal_text">
+                        <div id="details5"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card_modal">
+                <a href="#" id="modal26" onclick="showDetails(3, 5)">
+                    <img src="imgs/26.jpg" />
+                </a>
+                <h1>Ackbar</h1>
+            </div>
+            <div id="my_modal26" class="modal">
+                <div class="modal_content">
+                    <h3 id="title6"></h3>
+                    <div class="modal_text">
+                        <div id="details6"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card_modal">
+                <a href="#" id="modal27" onclick="showDetails(3, 6)">
+                    <img src="imgs/27.jpg" />
+                </a>
+                <h1>Mon Mothma</h1>
+            </div>
+            <div id="my_modal27" class="modal">
+                <div class="modal_content">
+                    <div id="title7"></div>
+                    <div class="modal_text">
+                        <div id="details7"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card_modal">
+                <a href="#" id="modal28" onclick="showDetails(3, 7)">
+                    <img src="imgs/28.jpg" />
+                </a>
+                <h1>Arvel Crynyd</h1>
+            </div>
+            <div id="my_modal28" class="modal">
+                <div class="modal_content">
+                    <div id="title8"></div>
+                    <div class="modal_text">
+                        <div id="details8"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card_modal">
+                <a href="#" id="modal29" onclick="showDetails(3, 8)">
+                    <img src="imgs/29.jpg" />
+                </a>
+                <h1>Wicket</h1>
+            </div>
+            <div id="my_modal29" class="modal">
+                <div class="modal_content">
+                    <div id="title9"></div>
+                    <div class="modal_text">
+                        <div id="details9"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card_modal">
+                <a href="#" id="modal30" onclick="showDetails(3, 9)">
+                    <img src="imgs/30.jpg" />
+                </a>
+                <h1>Nien Nunb</h1>
+            </div>
+            <div id="my_modal30" class="modal">
+                <div class="modal_content">
+                    <div id="title10"></div>
+                    <div class="modal_text">
+                        <div id="details10"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card_modal">
+                <a href="#" id="modal31" onclick="showDetails(4, 0)">
+                    <img src="imgs/31.jpg" />
+                </a>
+                <h1>Qui-Gon Jinn</h1>
+            </div>
+            <div id="my_modal31" class="modal">
+                <div class="modal_content">
+                    <h3 id="title1"></h3>
+                    <div class="modal_text">
+                        <div id="details1"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card_modal">
+                <a href="#" id="modal32" onclick="showDetails(4, 1)">
+                    <img src="imgs/32.jpg" />
+                </a>
+                <h1>Nute Gunray</h1>
+            </div>
+            <div id="my_modal32" class="modal">
+                <div class="modal_content">
+                    <div id="title2"></div>
+                    <div class="modal_text">
+                        <div id="details2"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card_modal">
+                <a href="#" id="modal33" onclick="showDetails(4, 2)">
+                    <img src="imgs/33.jpg" />
+                </a>
+                <h1>Finis Valorum</h1>
+            </div>
+            <div id="my_modal33" class="modal">
+                <div class="modal_content">
+                    <div id="title3"></div>
+                    <div class="modal_text">
+                        <div id="details3"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card_modal">
+                <a href="#" id="modal34" onclick="showDetails(4, 3)">
+                    <img src="imgs/34.jpg" />
+                </a>
+                <h1>Padmé Amidala</h1>
+            </div>
+            <div id="my_modal34" class="modal">
+                <div class="modal_content">
+                    <div id="title4"></div>
+                    <div class="modal_text">
+                        <div id="details4"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card_modal">
+                <a href="#" id="modal35" onclick="showDetails(4, 4)">
+                    <img src="imgs/35.jpg" />
+                </a>
+                <h1>Jar Jar Binks</h1>
+            </div>
+            <div id="my_modal35" class="modal">
+                <div class="modal_content">
+                    <div id="title5"></div>
+                    <div class="modal_text">
+                        <div id="details5"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card_modal">
+                <a href="#" id="modal36" onclick="showDetails(4, 5)">
+                    <img src="imgs/36.jpg" />
+                </a>
+                <h1>Roos Tarpals</h1>
+            </div>
+            <div id="my_modal36" class="modal">
+                <div class="modal_content">
+                    <h3 id="title6"></h3>
+                    <div class="modal_text">
+                        <div id="details6"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card_modal">
+                <a href="#" id="modal37" onclick="showDetails(4, 6)">
+                    <img src="imgs/37.jpg" />
+                </a>
+                <h1>Rugor Nass</h1>
+            </div>
+            <div id="my_modal37" class="modal">
+                <div class="modal_content">
+                    <div id="title7"></div>
+                    <div class="modal_text">
+                        <div id="details7"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card_modal">
+                <a href="#" id="modal38" onclick="showDetails(4, 7)">
+                    <img src="imgs/38.jpg" />
+                </a>
+                <h1>Ric Olié</h1>
+            </div>
+            <div id="my_modal38" class="modal">
+                <div class="modal_content">
+                    <div id="title8"></div>
+                    <div class="modal_text">
+                        <div id="details8"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card_modal">
+                <a href="#" id="modal39" onclick="showDetails(4, 8)">
+                    <img src="imgs/39.jpg" />
+                </a>
+                <h1>Watto</h1>
+            </div>
+            <div id="my_modal39" class="modal">
+                <div class="modal_content">
+                    <div id="title9"></div>
+                    <div class="modal_text">
+                        <div id="details9"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card_modal">
+                <a href="#" id="modal40" onclick="showDetails(4, 9)">
+                    <img src="imgs/40.jpg" />
+                </a>
+                <h1>Sebulba</h1>
+            </div>
+            <div id="my_modal40" class="modal">
+                <div class="modal_content">
+                    <div id="title10"></div>
+                    <div class="modal_text">
+                        <div id="details10"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card_modal">
+                <a href="#" id="modal41" onclick="showDetails(5, 0)">
+                    <img src="imgs/41.jpg" />
+                </a>
+                <h1>Quarsh Panaka</h1>
+            </div>
+            <div id="my_modal41" class="modal">
+                <div class="modal_content">
+                    <h3 id="title1"></h3>
+                    <div class="modal_text">
+                        <div id="details1"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card_modal">
+                <a href="#" id="modal42" onclick="showDetails(5, 1)">
+                    <img src="imgs/42.jpg" />
+                </a>
+                <h1>Shmi Skywalker</h1>
+            </div>
+            <div id="my_modal42" class="modal">
+                <div class="modal_content">
+                    <div id="title2"></div>
+                    <div class="modal_text">
+                        <div id="details2"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card_modal">
+                <a href="#" id="modal43" onclick="showDetails(5, 2)">
+                    <img src="imgs/43.jpg" />
+                </a>
+                <h1>Darth Maul</h1>
+            </div>
+            <div id="my_modal43" class="modal">
+                <div class="modal_content">
+                    <div id="title3"></div>
+                    <div class="modal_text">
+                        <div id="details3"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card_modal">
+                <a href="#" id="modal44" onclick="showDetails(5, 3)">
+                    <img src="imgs/44.jpg" />
+                </a>
+                <h1>Bib Fortuna</h1>
+            </div>
+            <div id="my_modal44" class="modal">
+                <div class="modal_content">
+                    <div id="title4"></div>
+                    <div class="modal_text">
+                        <div id="details4"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card_modal">
+                <a href="#" id="modal45" onclick="showDetails(5, 4)">
+                    <img src="imgs/45.jpg" />
+                </a>
+                <h1>Ayla Secura</h1>
+            </div>
+            <div id="my_modal45" class="modal">
+                <div class="modal_content">
+                    <div id="title5"></div>
+                    <div class="modal_text">
+                        <div id="details5"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card_modal">
+                <a href="#" id="modal46" onclick="showDetails(5, 5)">
+                    <img src="imgs/46.jpg" />
+                </a>
+                <h1>Ratts Tyerel</h1>
+            </div>
+            <div id="my_modal46" class="modal">
+                <div class="modal_content">
+                    <h3 id="title6"></h3>
+                    <div class="modal_text">
+                        <div id="details6"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card_modal">
+                <a href="#" id="modal47" onclick="showDetails(5, 6)">
+                    <img src="imgs/47.jpg" />
+                </a>
+                <h1>Dud Bolt</h1>
+            </div>
+            <div id="my_modal47" class="modal">
+                <div class="modal_content">
+                    <div id="title7"></div>
+                    <div class="modal_text">
+                        <div id="details7"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card_modal">
+                <a href="#" id="modal48" onclick="showDetails(5, 7)">
+                    <img src="imgs/48.jpg" />
+                </a>
+                <h1>Gasgano</h1>
+            </div>
+            <div id="my_modal48" class="modal">
+                <div class="modal_content">
+                    <div id="title8"></div>
+                    <div class="modal_text">
+                        <div id="details8"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card_modal">
+                <a href="#" id="modal49" onclick="showDetails(5, 8)">
+                    <img src="imgs/49.jpg" />
+                </a>
+                <h1>Ben Quadinaros</h1>
+            </div>
+            <div id="my_modal49" class="modal">
+                <div class="modal_content">
+                    <div id="title9"></div>
+                    <div class="modal_text">
+                        <div id="details9"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card_modal">
+                <a href="#" id="modal50" onclick="showDetails(5, 9)">
+                    <img src="imgs/50.jpg" />
+                </a>
+                <h1>Mace Windu</h1>
+            </div>
+            <div id="my_modal50" class="modal">
+                <div class="modal_content">
+                    <div id="title10"></div>
+                    <div class="modal_text">
+                        <div id="details10"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card_modal">
+                <a href="#" id="modal51" onclick="showDetails(6, 0)">
+                    <img src="imgs/51.jpg" />
+                </a>
+                <h1>Ki-Adi-Mundi</h1>
+            </div>
+            <div id="my_modal51" class="modal">
+                <div class="modal_content">
+                    <h3 id="title1"></h3>
+                    <div class="modal_text">
+                        <div id="details1"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card_modal">
+                <a href="#" id="modal52" onclick="showDetails(6, 1)">
+                    <img src="imgs/52.jpg" />
+                </a>
+                <h1>Kit Fisto</h1>
+            </div>
+            <div id="my_modal52" class="modal">
+                <div class="modal_content">
+                    <div id="title2"></div>
+                    <div class="modal_text">
+                        <div id="details2"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card_modal">
+                <a href="#" id="modal53" onclick="showDetails(6, 2)">
+                    <img src="imgs/53.jpg" />
+                </a>
+                <h1>Eeth Koth</h1>
+            </div>
+            <div id="my_modal53" class="modal">
+                <div class="modal_content">
+                    <div id="title3"></div>
+                    <div class="modal_text">
+                        <div id="details3"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card_modal">
+                <a href="#" id="modal54" onclick="showDetails(6, 3)">
+                    <img src="imgs/54.jpg" />
+                </a>
+                <h1>Adi Gallia</h1>
+            </div>
+            <div id="my_modal54" class="modal">
+                <div class="modal_content">
+                    <div id="title4"></div>
+                    <div class="modal_text">
+                        <div id="details4"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card_modal">
+                <a href="#" id="modal55" onclick="showDetails(6, 4)">
+                    <img src="imgs/55.jpg" />
+                </a>
+                <h1>Saesse Tiin</h1>
+            </div>
+            <div id="my_modal55" class="modal">
+                <div class="modal_content">
+                    <div id="title5"></div>
+                    <div class="modal_text">
+                        <div id="details5"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card_modal">
+                <a href="#" id="modal56" onclick="showDetails(6, 5)">
+                    <img src="imgs/56.jpg" />
+                </a>
+                <h1>Yarael Poof</h1>
+            </div>
+            <div id="my_modal56" class="modal">
+                <div class="modal_content">
+                    <h3 id="title6"></h3>
+                    <div class="modal_text">
+                        <div id="details6"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card_modal">
+                <a href="#" id="modal57" onclick="showDetails(6, 6)">
+                    <img src="imgs/57.jpg" />
+                </a>
+                <h1>Plo Koon</h1>
+            </div>
+            <div id="my_modal57" class="modal">
+                <div class="modal_content">
+                    <div id="title7"></div>
+                    <div class="modal_text">
+                        <div id="details7"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card_modal">
+                <a href="#" id="modal58" onclick="showDetails(6, 7)">
+                    <img src="imgs/58.jpg" />
+                </a>
+                <h1>Mas Amedda</h1>
+            </div>
+            <div id="my_modal58" class="modal">
+                <div class="modal_content">
+                    <div id="title8"></div>
+                    <div class="modal_text">
+                        <div id="details8"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card_modal">
+                <a href="#" id="modal59" onclick="showDetails(6, 8)">
+                    <img src="imgs/59.jpg" />
+                </a>
+                <h1>Gregar Typho</h1>
+            </div>
+            <div id="my_modal59" class="modal">
+                <div class="modal_content">
+                    <div id="title9"></div>
+                    <div class="modal_text">
+                        <div id="details9"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card_modal">
+                <a href="#" id="modal60" onclick="showDetails(6, 9)">
+                    <img src="imgs/60.jpg" />
+                </a>
+                <h1>Cordé</h1>
+            </div>
+            <div id="my_modal60" class="modal">
+                <div class="modal_content">
+                    <div id="title10"></div>
+                    <div class="modal_text">
+                        <div id="details10"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card_modal">
+                <a href="#" id="modal61" onclick="showDetails(7, 0)">
+                    <img src="imgs/61.jpg" />
+                </a>
+                <h1>Cliegg Lars</h1>
+            </div>
+            <div id="my_modal61" class="modal">
+                <div class="modal_content">
+                    <h3 id="title1"></h3>
+                    <div class="modal_text">
+                        <div id="details1"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card_modal">
+                <a href="#" id="modal62" onclick="showDetails(7, 1)">
+                    <img src="imgs/62.jpg" />
+                </a>
+                <h1>Poggle</h1>
+            </div>
+            <div id="my_modal62" class="modal">
+                <div class="modal_content">
+                    <div id="title2"></div>
+                    <div class="modal_text">
+                        <div id="details2"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card_modal">
+                <a href="#" id="modal63" onclick="showDetails(7, 2)">
+                    <img src="imgs/63.jpg" />
+                </a>
+                <h1>Luminara Unduli</h1>
+            </div>
+            <div id="my_modal63" class="modal">
+                <div class="modal_content">
+                    <div id="title3"></div>
+                    <div class="modal_text">
+                        <div id="details3"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card_modal">
+                <a href="#" id="modal64" onclick="showDetails(7, 3)">
+                    <img src="imgs/64.jpg" />
+                </a>
+                <h1>Barris Offee</h1>
+            </div>
+            <div id="my_modal64" class="modal">
+                <div class="modal_content">
+                    <div id="title4"></div>
+                    <div class="modal_text">
+                        <div id="details4"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card_modal">
+                <a href="#" id="modal65" onclick="showDetails(7, 4)">
+                    <img src="imgs/65.jpg" />
+                </a>
+                <h1>Dormé</h1>
+            </div>
+            <div id="my_modal65" class="modal">
+                <div class="modal_content">
+                    <div id="title5"></div>
+                    <div class="modal_text">
+                        <div id="details5"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card_modal">
+                <a href="#" id="modal66" onclick="showDetails(7, 5)">
+                    <img src="imgs/66.jpg" />
+                </a>
+                <h1>Dooku</h1>
+            </div>
+            <div id="my_modal66" class="modal">
+                <div class="modal_content">
+                    <h3 id="title6"></h3>
+                    <div class="modal_text">
+                        <div id="details6"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card_modal">
+                <a href="#" id="modal67" onclick="showDetails(7, 6)">
+                    <img src="imgs/67.jpg" />
+                </a>
+                <h1>Bail Prestor</h1>
+            </div>
+            <div id="my_modal67" class="modal">
+                <div class="modal_content">
+                    <div id="title7"></div>
+                    <div class="modal_text">
+                        <div id="details7"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card_modal">
+                <a href="#" id="modal68" onclick="showDetails(7, 7)">
+                    <img src="imgs/68.jpg" />
+                </a>
+                <h1>Jango Fett</h1>
+            </div>
+            <div id="my_modal68" class="modal">
+                <div class="modal_content">
+                    <div id="title8"></div>
+                    <div class="modal_text">
+                        <div id="details8"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card_modal">
+                <a href="#" id="modal69" onclick="showDetails(7, 8)">
+                    <img src="imgs/69.jpg" />
+                </a>
+                <h1>Zam Wesell</h1>
+            </div>
+            <div id="my_modal69" class="modal">
+                <div class="modal_content">
+                    <div id="title9"></div>
+                    <div class="modal_text">
+                        <div id="details9"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card_modal">
+                <a href="#" id="modal70" onclick="showDetails(7, 9)">
+                    <img src="imgs/70.jpg" />
+                </a>
+                <h1>Dexter Jettster</h1>
+            </div>
+            <div id="my_modal70" class="modal">
+                <div class="modal_content">
+                    <div id="title10"></div>
+                    <div class="modal_text">
+                        <div id="details10"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card_modal">
+                <a href="#" id="modal71" onclick="showDetails(8, 0)">
+                    <img src="imgs/71.jpg" />
+                </a>
+                <h1>Lama Su</h1>
+            </div>
+            <div id="my_modal71" class="modal">
+                <div class="modal_content">
+                    <h3 id="title1"></h3>
+                    <div class="modal_text">
+                        <div id="details1"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card_modal">
+                <a href="#" id="modal72" onclick="showDetails(8, 1)">
+                    <img src="imgs/72.jpg" />
+                </a>
+                <h1>Taun We</h1>
+            </div>
+            <div id="my_modal72" class="modal">
+                <div class="modal_content">
+                    <div id="title2"></div>
+                    <div class="modal_text">
+                        <div id="details2"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card_modal">
+                <a href="#" id="modal73" onclick="showDetails(8, 2)">
+                    <img src="imgs/73.jpg" />
+                </a>
+                <h1>LJacasta Nu</h1>
+            </div>
+            <div id="my_modal73" class="modal">
+                <div class="modal_content">
+                    <div id="title3"></div>
+                    <div class="modal_text">
+                        <div id="details3"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card_modal">
+                <a href="#" id="modal74" onclick="showDetails(8, 3)">
+                    <img src="imgs/74.jpg" />
+                </a>
+                <h1>R4-P17</h1>
+            </div>
+            <div id="my_modal74" class="modal">
+                <div class="modal_content">
+                    <div id="title4"></div>
+                    <div class="modal_text">
+                        <div id="details4"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card_modal">
+                <a href="#" id="modal75" onclick="showDetails(8, 4)">
+                    <img src="imgs/75.jpg" />
+                </a>
+                <h1>Wat Tambor</h1>
+            </div>
+            <div id="my_modal75" class="modal">
+                <div class="modal_content">
+                    <div id="title5"></div>
+                    <div class="modal_text">
+                        <div id="details5"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card_modal">
+                <a href="#" id="modal76" onclick="showDetails(8, 5)">
+                    <img src="imgs/76.jpg" />
+                </a>
+                <h1>San Hill</h1>
+            </div>
+            <div id="my_modal76" class="modal">
+                <div class="modal_content">
+                    <h3 id="title6"></h3>
+                    <div class="modal_text">
+                        <div id="details6"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card_modal">
+                <a href="#" id="modal77" onclick="showDetails(8, 6)">
+                    <img src="imgs/77.jpg" />
+                </a>
+                <h1>Shaak Ti</h1>
+            </div>
+            <div id="my_modal77" class="modal">
+                <div class="modal_content">
+                    <div id="title7"></div>
+                    <div class="modal_text">
+                        <div id="details7"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card_modal">
+                <a href="#" id="modal78" onclick="showDetails(8, 7)">
+                    <img src="imgs/78.jpg" />
+                </a>
+                <h1>Grievous</h1>
+            </div>
+            <div id="my_modal78" class="modal">
+                <div class="modal_content">
+                    <div id="title8"></div>
+                    <div class="modal_text">
+                        <div id="details8"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card_modal">
+                <a href="#" id="modal79" onclick="showDetails(8, 8)">
+                    <img src="imgs/79.jpg" />
+                </a>
+                <h1>Tarfful</h1>
+            </div>
+            <div id="my_modal79" class="modal">
+                <div class="modal_content">
+                    <div id="title9"></div>
+                    <div class="modal_text">
+                        <div id="details9"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card_modal">
+                <a href="#" id="modal80" onclick="showDetails(8, 9)">
+                    <img src="imgs/80.jpg" />
+                </a>
+                <h1>Raymus Antilles</h1>
+            </div>
+            <div id="my_modal80" class="modal">
+                <div class="modal_content">
+                    <div id="title10"></div>
+                    <div class="modal_text">
+                        <div id="details10"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card_modal">
+                <a href="#" id="modal81" onclick="showDetails(9, 0)">
+                    <img src="imgs/81.jpg" />
+                </a>
+                <h1>Sly Moore</h1>
+            </div>
+            <div id="my_modal81" class="modal">
+                <div class="modal_content">
+                    <h3 id="title1"></h3>
+                    <div class="modal_text">
+                        <div id="details1"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card_modal">
+                <a href="#" id="modal82" onclick="showDetails(9, 1)">
+                    <img src="imgs/82.jpg" />
+                </a>
+                <h1>Tion Medon</h1>
+            </div>
+            <div id="my_modal82" class="modal">
+                <div class="modal_content">
+                    <div id="title2"></div>
+                    <div class="modal_text">
+                        <div id="details2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="ajax.js"></script>
+
+</body>
+
+<script>
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+
+</script>
+
+</html>
