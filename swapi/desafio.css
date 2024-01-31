@@ -216,6 +216,13 @@ body {
   transition: 0.9s ease-in-out;
 }
 
+.modal_text img {
+  width: 5vw;
+  position: relative;
+  top: 22vh;
+  left: 15.5vw;
+}
+
 
 @media only screen and (max-device-width: 430px) {
 
@@ -284,7 +291,7 @@ body {
 
   .modal_content {
     width: 70vw;
-    height: 60vh;
+    height: 65vh;
     position: relative;
     top: 25%;
     left: 12%;
@@ -294,9 +301,15 @@ body {
     column-count: 1;
   }
 
-  #pagination{
+  #pagination {
     justify-content: center;
     position: relative;
     left: 0.5vw;
+  }
+
+  .modal_text img {
+    width: 20vw;
+    left: 22vw;
+    bottom: 5vh;
   }
 }
